@@ -1,4 +1,4 @@
-# HUMANOID AI Landing Page
+# JH Racing Humanoid AI Landing Page
 
 GitHub Pages용 정적 랜딩페이지입니다.
 
@@ -19,3 +19,9 @@ GitHub Pages용 정적 랜딩페이지입니다.
 - Company 영역 → 실제 회사명 / 주요 실적 / 기술 스택 추가
 - Academy 영역 → 실제 교육과정 링크 연결
 - 필요 시 실제 Humanoid 이미지 또는 동영상 Hero Background 추가
+
+
+## Brand Theme
+- Company: JH Racing
+- Primary brand color: Racing Red
+- Background: Sky Blue / White futuristic gradient

@@ -1,10 +1,306 @@
-<html>
-  <head>
-    <tutle> Racer JH</tutle>
-  </head>
-  <Body> 
-    <H1>첫 홈페이지</H1>
-    <H2>Racing is in my Blood</H2>
-  </Body>
-</html>
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="AI Automation & Humanoid Development Platform" />
+  <title>HUMANOID AI | Future Automation Platform</title>
 
+  <!-- Serif + Brush-like accent fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Noto+Sans+KR:wght@300;400;500;600;700&family=Nanum+Brush+Script&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="noise"></div>
+  <div class="cursor-glow" id="cursorGlow"></div>
+
+  <header class="nav-wrap">
+    <nav class="nav container">
+      <a class="brand" href="#home">
+        <span class="brand-mark">H</span>
+        <span>HUMANOID AI</span>
+      </a>
+
+      <button class="menu-btn" id="menuBtn" aria-label="메뉴 열기">
+        <span></span><span></span><span></span>
+      </button>
+
+      <div class="nav-links" id="navLinks">
+        <a href="#vision">Vision</a>
+        <a href="#platform">Platform</a>
+        <a href="#roadmap">Roadmap</a>
+        <a href="#academy">AI Academy</a>
+        <a href="#company">Company</a>
+        <a href="#contact" class="nav-cta">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero" id="home">
+      <div class="hero-grid"></div>
+      <div class="orb orb-1"></div>
+      <div class="orb orb-2"></div>
+      <div class="orb orb-3"></div>
+
+      <div class="hero-content container">
+        <div class="eyebrow reveal">GLOBAL AUTOMATION · PHYSICAL AI · HUMANOID</div>
+
+        <h1 class="hero-title reveal">
+          We Build
+          <span class="hero-serif">Intelligent</span>
+          <span class="brush-word">Motion</span>
+        </h1>
+
+        <p class="hero-copy reveal">
+          자동화 설비, AI Vision, Digital Twin, ROS 2, Robot SDK, VLA, Humanoid를
+          하나의 플랫폼으로 연결하여 미래 생산 시스템을 설계합니다.
+        </p>
+
+        <div class="hero-actions reveal">
+          <a class="btn primary" href="#platform">Explore Platform</a>
+          <a class="btn ghost" href="#roadmap">View Roadmap</a>
+        </div>
+
+        <div class="hero-stats reveal">
+          <div><strong>01</strong><span>Automation Platform</span></div>
+          <div><strong>02</strong><span>Humanoid Control</span></div>
+          <div><strong>03</strong><span>Physical AI Learning</span></div>
+          <div><strong>04</strong><span>Global Deployment</span></div>
+        </div>
+      </div>
+
+      <div class="hero-visual" aria-hidden="true">
+        <div class="robot-halo halo-a"></div>
+        <div class="robot-halo halo-b"></div>
+        <div class="robot-core">
+          <div class="robot-head">
+            <div class="robot-eye"></div>
+          </div>
+          <div class="robot-neck"></div>
+          <div class="robot-body">
+            <span class="core-light"></span>
+          </div>
+          <div class="robot-arm left"><span></span><i></i></div>
+          <div class="robot-arm right"><span></span><i></i></div>
+          <div class="robot-base"></div>
+        </div>
+      </div>
+
+      <div class="scroll-indicator">
+        <span>SCROLL</span><i></i>
+      </div>
+    </section>
+
+    <!-- VISION -->
+    <section class="section vision" id="vision">
+      <div class="container split">
+        <div class="section-heading reveal">
+          <span class="section-no">01 / VISION</span>
+          <h2>Automation evolves into<br><em>Autonomous Production.</em></h2>
+        </div>
+        <div class="vision-copy reveal">
+          <p>
+            단순 반복 자동화를 넘어, 설비가 데이터를 이해하고 로봇이 환경을 인식하며
+            AI가 작업을 판단하는 생산 시스템을 지향합니다.
+          </p>
+          <p>
+            현장의 Robot · PLC · Vision · MES · Digital Twin · Humanoid를 연결해
+            <strong>하나의 지능형 제조 플랫폼</strong>으로 확장합니다.
+          </p>
+        </div>
+      </div>
+
+      <div class="ticker-wrap">
+        <div class="ticker">
+          <span>ROBOTICS</span><b>•</b>
+          <span>AI VISION</span><b>•</b>
+          <span>DIGITAL TWIN</span><b>•</b>
+          <span>ROS 2</span><b>•</b>
+          <span>VLA</span><b>•</b>
+          <span>HUMANOID</span><b>•</b>
+          <span>AUTONOMOUS FACTORY</span><b>•</b>
+          <span>ROBOTICS</span><b>•</b>
+          <span>AI VISION</span><b>•</b>
+          <span>DIGITAL TWIN</span><b>•</b>
+        </div>
+      </div>
+    </section>
+
+    <!-- PLATFORM -->
+    <section class="section platform" id="platform">
+      <div class="container">
+        <div class="section-heading center reveal">
+          <span class="section-no">02 / PLATFORM</span>
+          <h2>One Architecture.<br><em>Every Robot Connected.</em></h2>
+          <p>Humanoid 개발에 필요한 제어, 인지, 학습, 시뮬레이션, 제조 시스템 연계를 계층화합니다.</p>
+        </div>
+
+        <div class="architecture">
+          <div class="arch-line"></div>
+
+          <article class="arch-card reveal" data-index="01">
+            <span class="arch-icon">◎</span>
+            <h3>Application</h3>
+            <p>Assembly · Welding · Inspection · Logistics · Human Collaboration</p>
+          </article>
+
+          <article class="arch-card reveal" data-index="02">
+            <span class="arch-icon">◈</span>
+            <h3>Physical AI</h3>
+            <p>VLA · Policy Learning · Imitation Learning · Reinforcement Learning</p>
+          </article>
+
+          <article class="arch-card reveal" data-index="03">
+            <span class="arch-icon">⌁</span>
+            <h3>Robot Platform</h3>
+            <p>ROS 2 · Robot SDK · Motion Control · Sensor Fusion · Teleoperation</p>
+          </article>
+
+          <article class="arch-card reveal" data-index="04">
+            <span class="arch-icon">◇</span>
+            <h3>Digital Twin</h3>
+            <p>Omniverse · Isaac Sim · USD · OLP · Virtual Commissioning</p>
+          </article>
+
+          <article class="arch-card reveal" data-index="05">
+            <span class="arch-icon">∞</span>
+            <h3>Factory Integration</h3>
+            <p>PLC · MES · ERP · OPC UA · Ethernet · Production Data</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ROADMAP -->
+    <section class="section roadmap" id="roadmap">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span class="section-no">03 / DEVELOPMENT ROADMAP</span>
+          <h2>From Robot Motion<br><em>to Physical Intelligence.</em></h2>
+        </div>
+
+        <div class="roadmap-grid">
+          <article class="road-card reveal">
+            <span class="year">STEP 01</span>
+            <h3>Connect</h3>
+            <p>Robot SDK, ROS 2, PLC, Machine Vision, sensor 데이터를 통합하고 제어 기반을 구축합니다.</p>
+            <ul>
+              <li>Robot SDK Integration</li>
+              <li>ROS 2 Middleware</li>
+              <li>Machine Vision</li>
+              <li>Safety Interface</li>
+            </ul>
+          </article>
+
+          <article class="road-card reveal featured">
+            <span class="year">STEP 02</span>
+            <h3>Learn</h3>
+            <p>Teleoperation과 Simulation으로 작업 데이터를 확보하고 AI 정책을 학습합니다.</p>
+            <ul>
+              <li>Teleoperation</li>
+              <li>Isaac Lab / Sim</li>
+              <li>VLA Dataset</li>
+              <li>Policy Training</li>
+            </ul>
+          </article>
+
+          <article class="road-card reveal">
+            <span class="year">STEP 03</span>
+            <h3>Autonomize</h3>
+            <p>생산오더와 작업환경을 이해하고 스스로 계획·실행·검증하는 자율 작업으로 확장합니다.</p>
+            <ul>
+              <li>MES Integration</li>
+              <li>Autonomous Task</li>
+              <li>Digital Twin Feedback</li>
+              <li>Global Standard</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ACADEMY -->
+    <section class="section academy" id="academy">
+      <div class="container">
+        <div class="academy-panel reveal">
+          <div class="academy-copy">
+            <span class="section-no">04 / AI EDUCATION</span>
+            <h2>Train the People<br>who will build the future.</h2>
+            <p>
+              AI 자동화와 Humanoid 기술을 실제 제조 현장에 적용하기 위한 실무 중심 교육 체계입니다.
+              기초부터 로봇 제어, 시뮬레이션, VLA까지 단계적으로 확장합니다.
+            </p>
+            <a href="#contact" class="text-link">Explore AI Academy →</a>
+          </div>
+
+          <div class="academy-list">
+            <div><span>01</span><p>AI & Physical AI Fundamentals</p></div>
+            <div><span>02</span><p>ROS 2 / Robot SDK</p></div>
+            <div><span>03</span><p>Machine Vision & Perception</p></div>
+            <div><span>04</span><p>Digital Twin / Isaac Sim</p></div>
+            <div><span>05</span><p>Teleoperation / Data Collection</p></div>
+            <div><span>06</span><p>VLA / Humanoid Application</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- COMPANY -->
+    <section class="section company" id="company">
+      <div class="container split">
+        <div class="section-heading reveal">
+          <span class="section-no">05 / COMPANY</span>
+          <h2>A Global Standard<br><em>for Automation.</em></h2>
+        </div>
+
+        <div class="company-copy reveal">
+          <p>
+            우리는 설비를 한 대씩 만드는 회사가 아니라,
+            전 세계 생산 거점에서 반복 적용할 수 있는
+            <strong>Automation Platform & Humanoid Ecosystem</strong>을 만듭니다.
+          </p>
+
+          <div class="company-tags">
+            <span>Automation CoE</span>
+            <span>Global Standardization</span>
+            <span>AI Factory</span>
+            <span>Humanoid</span>
+            <span>Digital Twin</span>
+            <span>Future Manufacturing</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-section" id="contact">
+      <div class="cta-bg"></div>
+      <div class="container cta-content reveal">
+        <span class="brush-small">Future starts here.</span>
+        <h2>Build the factory<br>that thinks and moves.</h2>
+        <p>AI Automation · Robotics · Humanoid · Digital Twin</p>
+        <a href="mailto:automation@example.com" class="btn dark">Start a Project</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-inner">
+      <div>
+        <strong>HUMANOID AI</strong>
+        <p>Future Automation Platform</p>
+      </div>
+      <div class="footer-right">
+        <span>© 2026 HUMANOID AI. All rights reserved.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
